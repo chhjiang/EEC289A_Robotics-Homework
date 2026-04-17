@@ -25,16 +25,16 @@ The notebook then needs to:
 5. copy Go2 mesh assets into `go2_pg_env/xmls/assets/`
 6. run `inspect_env.py`, `train.py`, `test_policy.py`, and `public_eval.py`
 
-The included notebook template at `notebooks/go2_teaching_colab_template.ipynb`
+The included notebook template at `notebooks/go2_public_colab_template.ipynb`
 has already been updated to use this public repo URL and the repo-side helper
 scripts in this repository.
 
 ## Why this repo exists
 
 The original homework notebook worked, but it hid most important files inside a
-payload blob. That was fine for distribution, but poor for teaching. This repo
-keeps the same main pipeline while exposing the code students are expected to
-read and modify.
+payload blob. That was fine for distribution, but it made the repository harder
+to inspect and maintain. This repo keeps the same main pipeline while exposing
+the code students are expected to read and modify.
 
 ## File map
 

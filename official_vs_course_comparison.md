@@ -2,7 +2,7 @@
 
 ## One-line summary
 
-The official locomotion notebook is a **broad Playground tutorial**.
+The official locomotion notebook is a **broad Playground reference workflow**.
 Our course code is a **Go2-focused assignment pipeline**.
 
 ## Main differences
@@ -44,7 +44,7 @@ Our course code is a **Go2-focused assignment pipeline**.
 
 **Official notebook**
 - Training happens directly inside notebook cells
-- Great for a quick tutorial
+- Great for a quick orientation pass
 
 **Course code**
 - Uses explicit scripts:
@@ -52,7 +52,7 @@ Our course code is a **Go2-focused assignment pipeline**.
   - `test_policy.py`
   - `generate_public_rollout.py`
   - `public_eval.py`
-- Better for teaching a reproducible pipeline
+- Better for a reproducible script-first pipeline
 
 ### 5. Benchmarking
 
@@ -64,14 +64,14 @@ Our course code is a **Go2-focused assignment pipeline**.
 - Adds a deterministic rollout bundle format
 - Adds a fixed evaluator for grading
 
-### 6. Pedagogy
+### 6. Repository readability
 
 **Original course notebook**
 - Hid the local code inside a large payload blob
 
 **Readable course version**
 - Exposes the real source files
-- Makes it much easier to explain each module in a 50-minute lecture
+- Makes it much easier to inspect each module in a structured walkthrough
 
 ## What stayed intentionally close to the official Go1 joystick task
 
