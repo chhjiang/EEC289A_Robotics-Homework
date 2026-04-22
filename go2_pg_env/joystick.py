@@ -565,7 +565,13 @@ class Joystick(go2_base.Go2Env):
         2. widen the stage_2 sampling range toward `self._student_stage2_goal_*`
         3. increase the probability of non-zero `vy` and `yaw_rate` commands
         """
+
         del current_command
+        return (
+          self._student_stage2_goal_min,
+          self._student_stage2_goal_max,
+          self._student_stage2_goal_b,
+          )
         return self._cmd_min, self._cmd_max, self._cmd_b
 
     def sample_command(self, rng: jax.Array, current_command: jax.Array) -> jax.Array:
