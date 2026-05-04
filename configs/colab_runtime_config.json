@@ -39,76 +39,80 @@
   },
   "stage_1": {
     "name": "stage_1",
-    "num_timesteps": 10000000,
+    "num_timesteps": 15000000,
     "command_range": {
       "min": [
-        0.0,
-        0.0,
-        0.0
+        -0.8,
+        -0.3,
+        -0.8
       ],
       "max": [
         0.8,
-        0.0,
-        0.0
+        0.3,
+        0.8
       ]
     },
     "command_keep_prob": [
       1.0,
-      0.0,
-      0.0
+      0.4,
+      0.4
     ],
     "reward_scales": {
       "action_rate": -0.02,
-      "energy": -0.0015
+      "energy": -0.0015,
+      "tracking_lin_vel": 1.5,
+      "tracking_ang_vel": 0.8
     }
   },
   "stage_2": {
     "name": "stage_2",
-    "num_timesteps": 5000000,
+    "num_timesteps": 8000000,
     "command_range": {
       "min": [
-        -0.6,
-        -0.2,
-        -0.6
+        -1.0,
+        -0.4,
+        -1.0
       ],
       "max": [
-        0.6,
-        0.2,
-        0.6
+        1.0,
+        0.4,
+        1.0
       ]
     },
     "command_keep_prob": [
       1.0,
-      0.35,
-      0.35
+      0.5,
+      0.5
     ],
     "student_stage2_goal": {
       "command_range": {
         "min": [
-          -0.6,
-          -0.2,
-          -0.6
+          -1.0,
+          -0.4,
+          -1.0
         ],
         "max": [
-          0.6,
-          0.2,
-          0.6
+          1.0,
+          0.4,
+          1.0
         ]
       },
       "command_keep_prob": [
         1.0,
-        0.35,
-        0.35
+        0.5,
+        0.5
       ]
     },
     "reward_scales": {
       "action_rate": -0.03,
-      "energy": -0.002
+      "energy": -0.002,
+      "tracking_lin_vel": 1.5,
+      "tracking_ang_vel": 0.8
     },
     "restore_previous_stage_checkpoint": true
   },
   "demo_rollout": {
-    "segment_seconds": 2.5,
+    "segment_seconds": 3.0,
     "segments": [
       [
         0.0,
@@ -116,24 +120,59 @@
         0.0
       ],
       [
-        0.2,
+        0.5,
         0.0,
         0.0
       ],
       [
-        0.4,
+        0.8,
         0.0,
         0.0
       ],
       [
-        0.6,
+        -0.5,
         0.0,
         0.0
       ],
       [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
         0.3,
+        0.0
+      ],
+      [
+        0.0,
+        -0.3,
+        0.0
+      ],
+      [
+        0.0,
         0.0,
         0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.6
+      ],
+      [
+        0.0,
+        0.0,
+        -0.6
+      ],
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.5,
+        0.2,
+        0.4
       ],
       [
         0.0,
@@ -228,7 +267,7 @@
       256,
       128
     ],
-    "stage_1_num_timesteps": 10000000,
-    "stage_2_num_timesteps": 5000000
+    "stage_1_num_timesteps": 15000000,
+    "stage_2_num_timesteps": 8000000
   }
 }

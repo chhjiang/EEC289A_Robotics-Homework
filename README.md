@@ -13,7 +13,7 @@ The key idea is:
 If you already have a cloud notebook, it should download this repo with:
 
 ```python
-COURSE_REPO_URL = "https://github.com/WeijieLai1024/EEC289A_Robotics-Homework.git"
+COURSE_REPO_URL = "https://github.com/chhjiang/EEC289A_Robotics-Homework.git"
 ```
 
 ## Important: Use your own GitHub repository in Colab
